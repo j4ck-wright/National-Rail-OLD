@@ -3,3 +3,5 @@ node_modules/
 .env
 old.js
 .vscode/*
+coverage
+jest.config.js
