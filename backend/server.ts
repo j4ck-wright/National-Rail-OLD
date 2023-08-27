@@ -5,7 +5,7 @@ import "dotenv/config";
 import { Darwin } from "./src/Darwin";
 
 const app: Express = express();
-const SERVER_PORT = process.env.PORT;
+const SERVER_PORT = process.env.PORT || 3000;
 const API_TOKEN = process.env.NATIONAL_RAIL_API_TOKEN;
 
 if (!API_TOKEN) {
