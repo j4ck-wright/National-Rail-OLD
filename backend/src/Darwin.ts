@@ -1,10 +1,10 @@
 export class Darwin {
-  private BASE_URL =
-    "https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx";
+  private BASE_URL: string;
   private token: string;
 
-  constructor(token: string) {
+  constructor(token: string, url: string) {
     this.token = token;
+    this.BASE_URL = url;
   }
 
   getDepartures() {

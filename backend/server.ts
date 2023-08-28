@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import "dotenv/config";
 
 import { Darwin } from "./src/Darwin";
+import { BASE_URL } from "./src/templates";
 
 const app: Application = express();
 const SERVER_PORT = process.env.PORT || 3000;
@@ -12,7 +13,7 @@ if (!API_TOKEN) {
   throw Error("❌ [Server]: No API key found, check the README for help");
 }
 
-const darwin = new Darwin(API_TOKEN);
+const darwin = new Darwin(API_TOKEN, BASE_URL);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
