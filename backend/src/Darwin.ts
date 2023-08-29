@@ -1,6 +1,7 @@
-import { buildXMLString } from "./helper";
+import { buildXMLString, sendRequest } from "./helper";
 import { departuresTemplate } from "./templates/getDepartures";
 import { serviceBoardOptions } from "./templates/serviceBoardParams";
+import { requestType } from "./helper/requestSender";
 
 export class Darwin {
   private BASE_URL: string;

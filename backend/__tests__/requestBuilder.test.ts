@@ -19,7 +19,7 @@ describe("requestBuilder.ts test suite", () => {
     );
 
     expect(xmlString).toEqual(
-      `<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://thalesgroup.com/RTTI/2013-11-28/Token/types" xmlns:ldb="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><soap:Header><typ:AccessToken><typ:TokenValue>token</typ:TokenValue></typ:AccessToken></soap:Header><soap:Body><ldb:GetDepartureBoardRequest><ldb:numRows></ldb:numRows><ldb:crs>XXX</ldb:crs><ldb:filterCrs></ldb:filterCrs><ldb:filterType></ldb:filterType><ldb:timeOffset></ldb:timeOffset><ldb:timeWindow></ldb:timeWindow></ldb:GetDepartureBoardRequest></soap:Body></soap:Envelope>`
+      `<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://thalesgroup.com/RTTI/2013-11-28/Token/types" xmlns:ldb="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><soap:Header><typ:AccessToken><typ:TokenValue>token</typ:TokenValue></typ:AccessToken></soap:Header><soap:Body><ldb:GetDepartureBoardRequest><ldb:crs>XXX</ldb:crs></ldb:GetDepartureBoardRequest></soap:Body></soap:Envelope>`
     );
   });
 
