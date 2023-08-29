@@ -5,6 +5,8 @@ import "dotenv/config";
 import { Darwin } from "./src/Darwin";
 import { BASE_URL } from "./src/templates";
 
+import { serviceBoardOptions } from "./src/templates";
+
 const app: Application = express();
 const SERVER_PORT = process.env.PORT || 3000;
 const API_TOKEN = process.env.NATIONAL_RAIL_API_TOKEN;

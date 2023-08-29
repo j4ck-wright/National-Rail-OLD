@@ -1,5 +1,5 @@
-import { serviceBoardOptions } from "../templates/serviceBoardParams";
-import { serviceDetailsOptions } from "../templates/getServiceDetails";
+import { serviceBoardOptions } from "../templates";
+import { serviceDetailsOptions } from "../templates";
 
 export function buildXMLString(
   template: string,

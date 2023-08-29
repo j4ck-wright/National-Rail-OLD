@@ -1,6 +1,6 @@
 import { buildXMLString } from "../src/helper";
-import { departuresTemplate } from "../src/templates/getDepartures";
-import { serviceBoardOptions } from "../src/templates/serviceBoardParams";
+import { departuresTemplate } from "../src/templates";
+import { serviceBoardOptions } from "../src/templates";
 import {
   serviceDetailsOptions,
   serviceDetailsTemplate,
